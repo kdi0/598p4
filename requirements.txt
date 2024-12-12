@@ -1,5 +1,5 @@
-pandas=2.2.3
-joblib
-numpy=1.26.4
+pandas==2.2.3
+joblib==1.2.0
+numpy==1.26.4
 os
 PIL
