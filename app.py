@@ -67,7 +67,7 @@ if 'ratings' not in st.session_state:
 if 'current_page' not in st.session_state:
     st.session_state.current_page = 0
     
-st.title("Movie Recommender System - 651627872")
+st.title("Movie Recommender System - 7872")
 st.write("Please rate below movies 1-5 star(s)，Leave blank for those you don't want to rate.")
 
 # page function to show movies
