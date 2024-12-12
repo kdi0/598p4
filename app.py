@@ -44,8 +44,8 @@ def myIBCF(newuser):
 
 import streamlit as st
 from PIL import Image
-import requests
-from io import BytesIO
+#import requests
+#from io import BytesIO
 
 st.set_page_config(layout="wide")
 movie_ids = ratings_pivot_columns
