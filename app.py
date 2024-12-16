@@ -78,7 +78,7 @@ def show_movies(page):
     current_movies = movie_ids[start_idx:end_idx]
 
     for i in range(0, len(current_movies), movies_per_row):
-        cols = st.columns(movies_per_row)  # 4 movies per row
+        cols = st.columns(movies_per_row)  # movies per row
         for col, movie_id in zip(cols, current_movies[i:i+movies_per_row]):
 
             #thumbnail_url = get_movie_thumbnail(movie_id)
@@ -157,7 +157,7 @@ if st.button("Submit Ratings"):
     st.write("Recommended Movies：")
     cols = st.columns(10)  # show 10 movies
     for i in range(0, len(recommended_movie_ids), 10):
-        cols = st.columns(10)  # 5 movies per row
+        cols = st.columns(10)  # movies per row
         for col, movie_id in zip(cols, recommended_movie_ids[i:i+10]):
             title = movies.loc[movies['MovieID'] == movie_id].iloc[0]['Title']
             thumbnail_path = get_movie_thumbnail(movie_id)
